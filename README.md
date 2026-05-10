@@ -1,75 +1,63 @@
-# React + TypeScript + Vite
+# Gopal Mathur
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Software Engineer | Distributed Systems | AI Infrastructure**  
+Noida, India · Available immediately for SDE1 roles
 
-Currently, two official plugins are available:
+I build production systems, not prototypes. My work focuses on distributed backend architecture, AI infrastructure, and systems-level engineering.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Experience
 
-## React Compiler
+### Siemens Technology — Software Development Engineer Intern
+**May 2025 – Present**
+- Built and shipped an enterprise GenAI RAG platform from PoC to production
+- Deployed across 3 regions: India, US, and Germany
+- Enabled adoption by 700+ users
+- Reduced training content development time by **40%**
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### Digital Asset Network — Smart Contract Engineer Intern
+**Sep 2024 – Mar 2025**
+- Built production Rust smart contracts on 2 blockchain protocols
+- Contributed to **700+ users** adoption and 15% customer base growth
+- Developed a TypeScript SDK for third-party integrations
 
-Note: This will impact Vite dev & build performances.
+### Ezinore Private Limited — Full Stack Developer
+**Feb 2023 – Sep 2023**
+- Built real-time ESP32 to AWS IoT Core pipelines in C++ for 20+ devices
+- Delivered full-stack product prototypes for investor demos
 
-## Expanding the ESLint configuration
+## Projects
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Realtime Collaborative Document Editor
+Google Docs-style collaborative editor built from first principles.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- C++ OT engine with Lamport clocks
+- CGo FFI boundary + Go WebSocket server
+- Kafka event sourcing + RS256/JWKS auth
+- Azure AKS deployment
+- Benchmarked throughput: **738 msg/sec**, **400 ops/sec**, **105 concurrent users**, **47,500+ ops under load**
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Custom Decoder-only GPT
+Built a GPT-style decoder Transformer from scratch in PyTorch.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Multi-head attention, positional embeddings, and causal masking
+- 6-layer model (384-dim, 6 heads, 1024 FFN)
+- End-to-end training pipeline with tiktoken
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Siemens GenAI Platform
+Enterprise RAG platform built with Spring Boot, React, and MongoDB.  
+Multi-region production deployment. NDA applies.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Technical Stack
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Languages:** Go, Rust, C++, Java, Python, TypeScript
+- **Backend:** Spring Boot, gRPC, Kafka, WebSockets, REST, Microservices
+- **Infrastructure:** Docker, Kubernetes, Azure, AWS, Nginx, CI/CD
+- **AI/ML:** PyTorch, RAG Pipelines, Vector DBs, LLM Integration, Transformer Architecture
+- **Databases:** PostgreSQL, MongoDB, Redis
+- **Frontend:** React, Next.js, Vite, Slate.js
+
+## Contact
+
+- **Email:** [mathurgopal1001@gmail.com](mailto:mathurgopal1001@gmail.com)
+- **GitHub:** [github.com/GM-11](https://github.com/GM-11)
+- **LinkedIn:** [linkedin.com/in/gopal-mathur-70044125a](https://linkedin.com/in/gopal-mathur-70044125a)
