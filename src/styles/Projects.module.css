@@ -1,0 +1,150 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1rem;
+  padding-block: 3.2rem;
+}
+
+.title {
+  grid-column: 1 / -1;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.cards {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  background: var(--surface);
+  padding: 1.3rem;
+  display: grid;
+  gap: 1rem;
+  transition: border-color 180ms ease;
+}
+
+.card:hover {
+  border-color: var(--accent);
+}
+
+.cardHeader {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.cardHeader h3 {
+  font-size: 1rem;
+}
+
+.cardHeader p {
+  color: var(--text-secondary);
+  font-size: 0.87rem;
+}
+
+.body {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  max-width: 90ch;
+}
+
+.metrics {
+  border-block: 1px solid var(--border);
+  padding-block: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.metrics p {
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: grid;
+  gap: 0.3rem;
+}
+
+.metrics p span {
+  color: var(--accent-dim);
+  font-size: 0.78rem;
+  transition: color 180ms ease;
+}
+
+.card:hover .metrics p span {
+  color: var(--accent);
+}
+
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.tags li {
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 0.3rem 0.55rem;
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  transition: color 180ms ease, border-color 180ms ease;
+}
+
+.tags li:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.iconLink {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: color 180ms ease, border-color 180ms ease;
+}
+
+.iconLink svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.iconLink:hover,
+.iconLink:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.secondary {
+  max-width: 52rem;
+}
+
+.label {
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 767px) {
+  .metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .bottomRow {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

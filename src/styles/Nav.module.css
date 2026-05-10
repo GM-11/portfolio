@@ -1,0 +1,104 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  border-bottom: 1px solid var(--border);
+  background: rgba(10, 10, 10, 0.94);
+  backdrop-filter: blur(3px);
+}
+
+.inner {
+  min-height: 64px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.mark {
+  grid-column: 1 / span 2;
+  color: var(--accent);
+  font-family: 'JetBrains Mono', 'IBM Plex Mono', monospace;
+  font-size: 1.15rem;
+  font-weight: 700;
+  width: fit-content;
+}
+
+.desktopNav {
+  grid-column: 7 / -1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.desktopNav a,
+.mobileNav a {
+  color: var(--text-secondary);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: color 180ms ease, border-color 180ms ease;
+}
+
+.desktopNav a:hover,
+.desktopNav a:focus-visible,
+.mobileNav a:hover,
+.mobileNav a:focus-visible {
+  color: var(--text-primary);
+  border-color: var(--accent);
+}
+
+.menuButton {
+  display: none;
+  justify-self: end;
+  grid-column: 11 / -1;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-primary);
+  font-family: 'JetBrains Mono', 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  padding: 0.45rem 0.8rem;
+  border-radius: 2px;
+}
+
+.mobileOverlay {
+  position: fixed;
+  inset: 64px 0 0;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.mobileOverlay.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.mobileNav {
+  width: min(1080px, 100% - 2rem);
+  margin: 2rem auto;
+  display: grid;
+  gap: 1.2rem;
+}
+
+.mobileNav a {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  width: fit-content;
+}
+
+@media (max-width: 767px) {
+  .desktopNav {
+    display: none;
+  }
+
+  .menuButton {
+    display: inline-flex;
+    align-items: center;
+  }
+}
