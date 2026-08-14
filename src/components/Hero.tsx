@@ -42,7 +42,7 @@ export default function Hero() {
           className={`${styles.edgeText} ${styles.loadIn}`}
           style={{ animationDelay: "400ms" }}
         >
-          Go · Rust · C++ · Java · Python
+          Java · Go · Rust · C++ · Python · TypeScript
         </p>
       </div>
     </section>

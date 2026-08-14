@@ -4,23 +4,31 @@ import styles from '../styles/Stack.module.css'
 const STACK_GROUPS = [
   {
     title: 'Languages',
-    items: ['Go', 'Rust', 'C++', 'Java', 'Python', 'TypeScript'],
+    items: ['Java', 'TypeScript', 'JavaScript', 'Go', 'Rust', 'C++', 'Python', 'SQL'],
   },
   {
     title: 'Backend',
-    items: ['Spring Boot', 'gRPC', 'Kafka', 'WebSockets', 'REST', 'Microservices'],
+    items: ['Spring Boot', 'Microservices', 'REST APIs', 'GraphQL', 'gRPC', 'WebSockets', 'Node.js', 'Kafka', 'Event-Driven Architecture'],
   },
   {
     title: 'Infrastructure',
-    items: ['Docker', 'Kubernetes', 'Azure', 'AWS', 'Nginx', 'CI/CD'],
+    items: ['Docker', 'Kubernetes', 'Azure AKS', 'Azure DevOps CI/CD', 'AWS Lambda', 'AWS S3', 'GitHub Actions'],
   },
   {
     title: 'AI/ML',
-    items: ['PyTorch', 'RAG Pipelines', 'Vector DBs', 'LLM Integration', 'Transformer Architecture'],
+    items: ['RAG Pipelines', 'LLM Integration', 'Pinecone', 'Chroma', 'Vector Search', 'PyTorch', 'Transformer Architecture'],
   },
   {
     title: 'Databases',
-    items: ['PostgreSQL', 'MongoDB', 'Redis'],
+    items: ['PostgreSQL', 'MongoDB', 'Redis', 'Elasticsearch'],
+  },
+  {
+    title: 'Testing & SDLC',
+    items: ['JUnit', 'Mockito', 'Jest', 'k6', 'TDD', 'Integration Testing', 'Code Reviews'],
+  },
+  {
+    title: 'AI Dev Tools',
+    items: ['GitHub Copilot', 'Claude Code', 'Cursor', 'Codex'],
   },
   {
     title: 'Frontend',

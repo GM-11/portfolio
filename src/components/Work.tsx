@@ -11,47 +11,37 @@ export default function Work() {
         <div className={styles.timeline}>
           <article className={styles.item}>
             <header className={styles.header}>
-              <h3>Siemens Technology</h3>
+              <h3>Siemens Technology and Services</h3>
               <p>Software Development Engineer Intern</p>
-              <span>May 2025 – Present</span>
+              <span>May 2025 – May 2026</span>
             </header>
             <ul>
-              <li>GenAI RAG platform: PoC → production, 3 regions (India, US, Germany)</li>
-              <li>
-                700+ users, <strong className={styles.accent}>40%</strong> reduction in training
-                content development time
-              </li>
-              <li>Stack: Spring Boot · React · MongoDB · Docker · Azure CI/CD · RAG Pipelines</li>
-              <li>Featured internally as flagship AI adoption initiative</li>
+              <li>Built Java/Spring Boot microservices and REST APIs, shipping production features across <strong className={styles.accent}>3 global regions</strong> through the full SDLC.</li>
+              <li>Eliminated deployment downtime and reached <strong className={styles.accent}>85% automated test coverage</strong> via Azure DevOps CI/CD with JUnit/Mockito and structured code reviews.</li>
+              <li>Cut REST API response times <strong className={styles.accent}>40%</strong> and sustained <strong className={styles.accent}>0% errors under 100 concurrent users</strong> via token-bucket rate limiting, validated with k6.</li>
+              <li>Reduced enterprise content-development time <strong className={styles.accent}>40%</strong> for 100+ users with a RAG platform (LLM + Chroma), cutting latency 30% via Redis caching.</li>
             </ul>
           </article>
           <article className={styles.item}>
             <header className={styles.header}>
               <h3>Digital Asset Network</h3>
-              <p>Smart Contract Engineer Intern</p>
+              <p>Software Development Engineer Intern</p>
               <span>Sep 2024 – Mar 2025</span>
             </header>
             <ul>
-              <li>Production Rust smart contracts on 2 blockchain protocols</li>
-              <li>
-                <strong className={styles.accent}>700+ users</strong> adoption, 15% customer base
-                growth via DeFi primitives
-              </li>
-              <li>TypeScript SDK for third-party integrations</li>
+              <li>Delivered secure real-time transaction processing for <strong className={styles.accent}>700+ users</strong> at <strong className={styles.accent}>99.9% uptime</strong> and sub-200ms latency via Rust smart contracts on Solana and TON.</li>
+              <li>Increased user engagement <strong className={styles.accent}>25%</strong> with a TypeScript/React dashboard with WebSocket real-time price feeds and multi-chain wallet integration, serving 200+ daily active users.</li>
             </ul>
           </article>
           <article className={styles.item}>
             <header className={styles.header}>
               <h3>Ezinore Private Limited</h3>
-              <p>Full Stack Developer</p>
+              <p>Software Development Engineer Intern</p>
               <span>Feb 2023 – Sep 2023</span>
             </header>
             <ul>
-              <li>
-                ESP32 → AWS IoT Core real-time pipelines in C++,{' '}
-                <strong className={styles.accent}>20+ devices</strong>
-              </li>
-              <li>Full-stack prototypes (Flutter + SvelteKit) for investor demos</li>
+              <li>Architected an event-driven ingestion pipeline on AWS IoT Core, streaming telemetry from <strong className={styles.accent}>20+ edge devices</strong> into NoSQL storage for continuous industrial monitoring.</li>
+              <li>Accelerated prototype delivery by <strong className={styles.accent}>3 weeks</strong> by building cross-platform dashboards with live monitoring, configurable alerts, and historical trend visualization.</li>
             </ul>
           </article>
         </div>

@@ -56,16 +56,16 @@ export default function Contact() {
           </li>
           <li>
             <a
-              href="https://linkedin.com/in/gopal-mathur-70044125a"
+              href="https://linkedin.com/in/gopalmathur"
               target="_blank"
               rel="noopener noreferrer"
             >
               <LinkedInIcon />
-              linkedin.com/in/gopal-mathur-70044125a
+              linkedin.com/in/gopalmathur
             </a>
           </li>
         </ul>
-        <p className={styles.copy}>Open to SDE1 roles. Available June 2026.</p>
+        <p className={styles.copy}>Open to SDE roles. Available immediately.</p>
       </div>
     </section>
   )
